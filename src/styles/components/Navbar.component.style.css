@@ -52,7 +52,7 @@ nav .menu .website_name:hover {
 
 nav .menu .menu_links {
     transition: all 0.4s ease;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 nav .menu .menu_links:hover {
@@ -66,7 +66,7 @@ nav .menu .menu_links:hover {
 }
 
 nav .menu .menu_links .link {
-    color: #555;
+    color: black;
     text-transform: uppercase;
     font-weight: 500;
     margin-right: 50px;
@@ -84,7 +84,7 @@ nav .menu .menu_links .link:before {
     position: absolute;
     width: 0px;
     height: 4px;
-    background: linear-gradient(90deg, #ffedc0 0%, #ff9d87 100%);
+    background: linear-gradient(90deg, #ffedc0 0%, #97ff87 100%);
     bottom: -10px;
     border-radius: 4px;
     transition: all 0.4s cubic-bezier(0.82, 0.02, 0.13, 1.26);
@@ -93,7 +93,7 @@ nav .menu .menu_links .link:before {
 
 nav .menu .menu_links .link:hover {
     opacity: 1;
-    color: #fb8a8a;
+    color: #6fff00;
 }
 
 nav .menu .menu_links .link:hover:before {

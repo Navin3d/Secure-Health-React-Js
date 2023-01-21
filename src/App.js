@@ -1,6 +1,11 @@
 import Router from "./utils/router";
+import { CookiesProvider } from 'react-cookie';
 
 
-const App = () => <Router />;
+const App = () => (
+    <CookiesProvider>
+        <Router />
+    </CookiesProvider>
+);
 
 export default App;

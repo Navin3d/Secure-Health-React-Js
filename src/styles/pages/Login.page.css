@@ -1,0 +1,43 @@
+.login-img {
+    height: 89vh;
+    min-width: 100%;
+}
+
+.form-area {
+    margin-top: 15%;
+    padding: 5%;
+}
+
+.form-input {
+    margin: 1%;
+    font-size: larger;
+    padding: 2%;
+}
+
+.login-sumit {
+    text-align: center;
+    margin: 1%;
+    font-size: larger;
+    padding: 2%;
+    width: 100%;
+}
+
+.login-forgot-password {
+    float: right;
+}
+
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+    float: right;
+}
+
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+
+#components-form-demo-normal-login .login-form-button {
+    width: 100%;
+}
