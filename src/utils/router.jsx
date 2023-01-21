@@ -23,11 +23,11 @@ const Router = () => (
             <Route path="/" element={<HomePage />} exact={true} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignUpPage />} />
-            <Route path="/diseases" element={<DiseaseListingPage />} />
+            <Route path="/disease/list" element={<DiseaseListingPage />} />
             <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
             <Route path="/doctor/:did" element={<DoctorProfilePage />} />
             <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
-            <Route path="/appoinments" element={<AppoinmentListingPage />} />
+            <Route path="/appoinment/list" element={<AppoinmentListingPage />} />
             <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
             <Route path="/patient/profile" element={<PatientProfilePage />} />
             <Route path="*" element={<PageNotFound />} />

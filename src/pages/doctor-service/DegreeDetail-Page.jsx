@@ -1,9 +1,9 @@
-const UploadDischargeSummary = () => {
-    return (
+const DegreeDetailPage = () => {
+    return(
         <div>
-            <h1>UploadDischargeSummary Page</h1>
+            <h1>DegreeDetailPage</h1>
         </div>
     );
 }
 
-export default UploadDischargeSummary;
+export default DegreeDetailPage;
