@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
@@ -8,20 +8,28 @@ import "../styles/components/Navbar.component.style.css";
 const Navbar = () => {
 
     let navigate = useNavigate();
-    const [cookies, setCookies] = useCookies(["Authorization", "Doctor_Id", "Patient_Id", "Refresh_Token", "Logged-In"]);
-    const [hasLoggedIn, setLoggedIn] = useState(cookies["Logged-In"]);
+    const [cookies, setCookies] = useCookies(["Authorization", "Is_Doctor", "User_Id", "Refresh_Token", "Logged-In"]);
+    const [hasLoggedIn, setLoggedIn] = useState(true);
 
     const navigateToProfile = () => {
         cookies.Doctor_Id ? navigate(`/doctor/${cookies.Doctor_Id}`) : navigate(`/patient/profile`);
     }
 
     const handleLogout = () => {
+        console.log("pressed")
         setCookies("Authorization", "");
         setCookies("Refresh_Token", "");
         setCookies("Doctor_Id", "");
         setCookies("Patient_Id", "");
         setCookies("Logged-In", false);
+        setLoggedIn(cookies["Logged-In"]);
+        console.log(cookies["Logged-In"]);
     }
+
+    useEffect(() => {
+        console.log(cookies["Logged-In"]);
+        setLoggedIn(cookies["Logged-In"]);
+    });
 
     return (
         <div>

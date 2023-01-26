@@ -8,6 +8,12 @@
     padding: 5%;
 }
 
+.image-area {
+    /* height: 89vh;  */
+    /* min-width: 100%; */
+    padding-left: 6%;
+}
+
 .form-input {
     margin: 1%;
     font-size: larger;
