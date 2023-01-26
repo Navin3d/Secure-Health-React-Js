@@ -29,7 +29,7 @@
     width: 300px;
 }
 .registerbutton:hover{
-    background-color: rgb(125, 89, 255);
+    background-color: rgb(68, 7, 104);
     color: rgb(249, 249, 249);
 }
 .login-redirect{
@@ -40,10 +40,10 @@
     margin-bottom: 20px;
 }
 .image{
-    border: 1px solid black;
+   
     margin-top: 100px;
-    height: 550px;
-    width: 500px;
+    height: 500px;
+    width: 550px;
     border-radius: 5px;
 }
 .tagline{
