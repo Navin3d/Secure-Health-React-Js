@@ -12,13 +12,12 @@ import BookAppoinmentPage from "../pages/patient-service/BookAppoinmentPage";
 import AppoinmentListingPage from "../pages/patient-service/AppoinmentList-Page";
 import AppoinmentDetailPage from "../pages/patient-service/AppoinmentDetail-Page";
 import PatientProfilePage from "../pages/patient-service/PatientProfile-Page";
-
 import PageNotFound from "../pages/404-Page";
 
 
 const Router = () => (
     <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
             <Route path="/" element={<HomePage />} exact={true} />
             <Route path="/login" element={<LoginPage />} />
