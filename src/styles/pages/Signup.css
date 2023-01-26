@@ -46,6 +46,11 @@
     width: 500px;
     border-radius: 5px;
 }
+.tagline{
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media only screen and (max-width: 600px) {
     .image{
         display: none;

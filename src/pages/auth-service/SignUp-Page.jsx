@@ -7,8 +7,8 @@ const SignUpPage = () => {
                 <div className="row">
                     <div className="col-md-1"></div>
                     <div className="col-md-5">
-                        <h5 class="head-content">Create An Account</h5>
-                      
+                        <h5 class="head-content">Create An Account<br></br><p className='tagline'>At your Quick service </p></h5>
+                
                         <label for="fname" id="label">First name:</label><br></br><input type="text" id="fname" name="fname"/>
                         <br></br>
                         <label for="lname" id="label">Email:</label><br></br><input type="text" id="fname" name="lname"/>
