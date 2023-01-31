@@ -7,9 +7,12 @@ const AppoinmentList = () => {
             </div>
             <div className="container">
                 <div className="row">
+                    <div className="box-list">
+
+
                     <div className="col"></div>
-                    <div className="col"></div>
-                    <div className="col"></div>
+
+                    </div>
                 </div>
             </div>
         </div>
