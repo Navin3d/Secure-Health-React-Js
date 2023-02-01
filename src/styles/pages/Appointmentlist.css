@@ -1,15 +1,62 @@
-.pen_app{
-text-align: center;    
-margin-bottom: 30px;
-font-weight: 500;
-font-size: 20px;
-}
 
+.app_list_title h6{
+   font-size: 25px;
+   font-weight: 500;
+   font-family: 'Acme', sans-serif;
+   margin: 25px 0px 20px 25px;
+}
+.pen_app{
+   text-align: center;    
+   margin-bottom: 30px;
+   font-weight: 600;
+   font-size: 17px;
+   font-family: sans-serif;
+   }
+.Filter_box{
+   border: 1px solid black;
+   margin: 28px 10px 10px 10px;
+   border-radius: 5px;
+}
+.fil_lab{
+   font-size: 17px;
+   font-family: 'Acme', sans-serif;
+}
+.sort_btn{
+
+   font-size: larger;
+   font-weight: 400;
+   border: 1px solid black;
+   width: 50px;
+   font-family: 'Acme', sans-serif;
+}
+.dropdown{
+   margin-top: 20px;
+}
+.btn{
+   border: 1px solid black;
+}
 table {
-    border:1px solid black;
+    border:1px solid rgb(230, 228, 228);
     padding: 10px;
  }
- th, td{
-    border:1px solid black;
-    padding: 20px;
+ th {
+   border:1px solid rgb(241, 241, 241);
+   padding: 20px;
+   font-family: 'Secular One',sans-serif;
+   font-weight: 300;
+}
+ td{
+   border:1px solid rgb(241, 241, 241);
+   padding: 20px;
+   font-family: 'Dongle', sans-serif;
+   font-size: 25px;
+   font-weight: 300;
+}
+ .table_row_head{
+   background-color: rgb(238, 238, 238);
+ }
+ @media only screen and (max-width: 600px) {
+   #media_move {
+      margin-left: 20px;
+   }
  }
