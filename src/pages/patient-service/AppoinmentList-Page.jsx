@@ -5,7 +5,7 @@ const AppoinmentList = () => {
         <div>
             <div className="app_list_title">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-7">
                         <h6>
                             Appoinments
                         </h6>
@@ -14,7 +14,7 @@ const AppoinmentList = () => {
                         <label className='fil_lab' htmlFor="">Filter</label>
                         <input className='Filter_box' type="text" placeholder='search' />
                     </div>
-                    <div id='media_move' className="col-md-3">
+                    <div id='media_move' className="col-md-2">
                         <div class="dropdown">
                           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             SortBy
@@ -51,7 +51,7 @@ const AppoinmentList = () => {
                        <td>12-05-23</td>
                        <td>09:00</td>
                        <td>udhayar block</td>
-                       <td>Dr.j.priya</td>
+                       <td><a href="/doctor/:did">Dr.j.priya</a></td>
                        <td>confirmed</td>
                     </tr>
                  </table>
@@ -81,7 +81,7 @@ const AppoinmentList = () => {
                        <td>12-05-23</td>
                        <td>09:00</td>
                        <td>udhayar block</td>
-                       <td>Dr.j.priya</td>
+                       <td><a href="/doctor/:did">Dr.j.priya</a></td>
                     </tr>
 
                  </table>

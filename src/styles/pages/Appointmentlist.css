@@ -3,10 +3,11 @@
    font-size: 25px;
    font-weight: 500;
    font-family: 'Acme', sans-serif;
-   margin: 25px 0px 20px 25px;
+   margin: 25px 0px 10px 25px;
 }
 .pen_app{
-   text-align: center;    
+   text-align: center;  
+   margin-top: 30px;  
    margin-bottom: 30px;
    font-weight: 600;
    font-size: 17px;
@@ -36,17 +37,17 @@
    border: 1px solid black;
 }
 table {
-    border:1px solid rgb(230, 228, 228);
+    border:1px solid rgb(198, 198, 198);
     padding: 10px;
  }
  th {
-   border:1px solid rgb(241, 241, 241);
+   border:1px solid rgb(219, 219, 219);
    padding: 20px;
    font-family: 'Secular One',sans-serif;
    font-weight: 300;
 }
  td{
-   border:1px solid rgb(241, 241, 241);
+   border:1px solid rgb(206, 206, 206);
    padding: 20px;
    font-family: 'Dongle', sans-serif;
    font-size: 25px;
