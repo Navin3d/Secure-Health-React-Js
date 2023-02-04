@@ -1,5 +1,6 @@
 // import App_Img from '../../assets/images/profile.jpg';
 import '../../styles/pages/Appointmentlist.css'
+import Appointmentdetail from '../patient-service/AppoinmentDetail-Page'
 const AppoinmentList = () => {
     return (
         <div>
@@ -44,6 +45,7 @@ const AppoinmentList = () => {
                        <th>Location</th>
                        <th>Doctor name</th>
                        <th>Status</th>
+                       <th>View details</th>
                     </tr>
                     <tr>
                         <td>1</td>
@@ -53,10 +55,15 @@ const AppoinmentList = () => {
                        <td>udhayar block</td>
                        <td><a href="/doctor/:did">Dr.j.priya</a></td>
                        <td>confirmed</td>
+                       <td><Appointmentdetail></Appointmentdetail></td>
                     </tr>
                  </table>
                 </div>
             </div>
+
+{/* sidenav */}
+
+
 
 {/* previous appoinments */}
         <div className="content-title"></div>
@@ -74,14 +81,17 @@ const AppoinmentList = () => {
                        <th>Due Time</th>
                        <th>Location</th>
                        <th>Doctor name</th>
+                       <th>View details</th>    
                     </tr>
                     <tr>
                         <td>1</td>
                        <td>Viral Fever</td>
                        <td>12-05-23</td>
                        <td>09:00</td>
-                       <td>udhayar block</td>
+                       <td>udhayar block</td>   
                        <td><a href="/doctor/:did">Dr.j.priya</a></td>
+                       <td><Appointmentdetail></Appointmentdetail></td>     
+                   
                     </tr>
 
                  </table>
