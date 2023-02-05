@@ -1,3 +1,13 @@
 #mySidenav{
     background-color: white;
 }
+.des_title{
+    font-family: 'Acme', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.des_data{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}

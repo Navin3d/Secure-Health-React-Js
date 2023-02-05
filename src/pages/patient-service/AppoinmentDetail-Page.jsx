@@ -59,7 +59,7 @@ class AppoinmentDetail extends React.Component {
           id="mySidenav"
           style={{
             ...styles.sidenav,
-            width: this.state.sidenavOpen ? '500px' : '0'
+            width: this.state.sidenavOpen ? '390px' : '0'
           }}
         >
           <a
@@ -70,22 +70,22 @@ class AppoinmentDetail extends React.Component {
             &times;
           </a>
           <div className="container">
-          <h2>Summary</h2>
-          <p>text</p>
-          <h2>description</h2>
-          <p>text</p>
-          <h2>noteByDoctor</h2>
-          <p>text</p>
-          <h2>appoinmentStatus</h2>
-          <p>text</p>
-          <h2>appoinmentTime</h2>
-          <p>text</p>
-          <h2>appoinmentDate</h2>
-          <p>text</p>
-          <h2>patientRequested</h2>
-          <p>text</p>
-          <h2>handledByDoctor</h2>
-          <p>text</p>
+          <h5 className='des_title'>Summary</h5>
+          <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
+          <h5 className='des_title'>description</h5>
+          <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
+          <h5 className='des_title'>noteByDoctor</h5>
+          <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
+          <h5 className='des_title'>appoinmentStatus</h5>
+          <p className='des_data'>Confirmed</p >
+          <h5 className='des_title'>appoinmenttime</h5>
+          <p className='des_data'>9:00 am</p >
+          <h5 className='des_title'>appoinment date</h5>
+          <p className='des_data'>29-05-2023</p >
+          <h5 className='des_title'>patientRequested</h5>
+          <p className='des_data'>Blood test</p >
+          <h5 className='des_title'>handledByDoctor</h5>
+          <p className='des_data'>Dr.j.priya</p >
           </div>
 
         </div>
