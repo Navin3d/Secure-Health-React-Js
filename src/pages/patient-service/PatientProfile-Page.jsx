@@ -1,5 +1,5 @@
 import '../../styles/pages/Patientprofile.css'
-import pat_profle from '../../assets/images/pat_profile_img.jpg'
+import pat_profle from '../../assets/images/profile.jpg'
 const PatientProfile = () => {
     return (
         <div>
@@ -99,6 +99,50 @@ const PatientProfile = () => {
                             </div>  
                         </div>
                     </div>
+
+                    {/* second row starts(notes and labresult) */}
+                    <div className="up"></div>
+                    <div className="row">
+                        <div id="Pat_pers_background1" className="col">
+                            <h5 id='curr_med'>
+                                 Notes
+                            </h5>
+                            <hr />
+                            <p className='med'>06/06/2023</p>
+                            <p className='med1'> We've all heard the horror stories about hospital risks after surgery. There's the danger of medical complications, like bleeding or infection. Then there are the human errors, like getting the wrong drug or dosage. "Even though you've got a lot of well-trained people in a hospital working very hard, they're still people," says Fran Griffin, RRT, MPA, a director at the Institute for Healthcare Improvement in Cambridge, Mass. "And people sometimes make mistakes."</p>
+                        </div>
+                        <div id="Pat_pers_background1" className="col">
+                            <h5 id='curr_med'>
+                                 Lab results
+                            </h5>
+                            <hr />
+                            <div className="row">
+                            <div className="col">
+                            <p className='med1'><i id='note' class="fa-solid fa-note-sticky"></i> x_ray </p>
+                            </div>
+                            <div className="col">
+                            <p className='med1'>06/06/2023</p>
+                            </div>
+                            <div className="col">
+                            <p className='med1'>John adam</p>
+                            </div>
+                            </div>
+                            <div className="row">
+                            <div className="col">
+                            <p className='med1'><i id='note' class="fa-solid fa-note-sticky"></i> x_ray </p>
+                            </div>
+                            <div className="col">
+                            <p className='med1'>06/06/2023</p>
+                            </div>
+                            <div className="col">
+                            <p className='med1'>John adam</p>
+                            </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div className="down"></div>
                 </div>
         </div>
     );
