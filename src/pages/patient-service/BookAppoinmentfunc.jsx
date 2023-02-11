@@ -1,21 +1,4 @@
-// import React, { useState } from 'react';
 
-// function BookAppoinmentfunc() {
-//   const [message, setMessage] = useState('');
-
-//   const handleClick = () => {
-//     setMessage('Hello');
-//   };
-
-//   return (
-//     <div>
-//       <button onClick={handleClick}>Click Me</button>
-//       {message && <h1>{message}</h1>}
-//     </div>
-//   );
-// }
-
-// export default BookAppoinmentfunc;
 
 
 import React, { useState } from "react";

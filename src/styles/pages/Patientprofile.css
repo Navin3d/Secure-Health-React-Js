@@ -1,0 +1,122 @@
+#pat_per_details{
+    border-right: 1px solid rgb(232, 232, 232);  
+}
+.det1{
+    margin-top: 30px; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px; 
+    font-weight: 500; 
+}
+#det_ans1{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Pat_prof_title{
+    color: rgb(91, 91, 91);
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.Pat_img{
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 78px;
+}
+#Pat_pers_background{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 20px;
+  
+}
+#Pat_pers_background1{
+    margin-left:10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 20px;
+    max-height: 220px;
+    overflow-y: auto;
+    position: relative;
+  
+}
+.patient_prof_name{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+    font-size: 20px;
+}
+.patient_prof_prblm{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(91, 91, 91);
+    font-size: 15px;
+}
+.det{
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#det_ans{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Current medication css */
+#curr_med{
+    color: rgb(91, 91, 91);
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    margin: 10px 0px 10px 20px;
+}
+.med{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10px;
+}
+.bld_pls{
+    text-align: center;
+}
+.usr_snd_btn{
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(27, 9, 78);
+    border: 1px solid violet;
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 20px;
+
+}
+.usr_snd_btn:hover{
+
+    background-color: rgb(39, 7, 128);;
+    color: rgb(255, 255, 255);
+}
+#BPM{
+    font-size: 11px;
+}
+.buttttttton{
+    margin-top: 20px;
+    text-align: center;
+}
+#loga{
+ font-size: 50px;
+}
