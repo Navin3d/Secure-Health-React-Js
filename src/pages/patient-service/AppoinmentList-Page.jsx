@@ -39,7 +39,7 @@ const AppoinmentList = () => {
                 <table>
                     <tr className='table_row_head' > 
                         <th>#</th>
-                       <th>Appointment_type</th>
+                        <th>Appointment_type</th>
                        <th>Due date</th>
                        <th>Due Time</th>
                        <th>Location</th>

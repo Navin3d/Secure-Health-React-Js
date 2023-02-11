@@ -70,21 +70,21 @@ class AppoinmentDetail extends React.Component {
             &times;
           </a>
           <div className="container">
-          <h5 className='des_title'>Summary</h5>
+          <h5 className='des_title'><i  id="round1"class="fa-solid fa-note-sticky"></i>Summary  </h5>
           <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
-          <h5 className='des_title'>description</h5>
+          <h5 className='des_title'><i  id="round1"class="fa-solid fa-note-sticky"></i> Description </h5>
           <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
-          <h5 className='des_title'>noteByDoctor</h5>
+          <h5 className='des_title'><i id="round1"class="fa-solid fa-pen"></i> NoteByDoctor </h5>
           <p className='des_data'>This is a sever viral infection caused by the continuous coughing. this can lead to the heavy damage of the vocal cords and may lead to blood vomiting</p >
-          <h5 className='des_title'>appoinmentStatus</h5>
+          <h5 className='des_title'> <i id="round" class="fa-sharp fa-solid fa-circle"></i> AppoinmentStatus  </h5>
           <p className='des_data'>Confirmed</p >
-          <h5 className='des_title'>appoinmenttime</h5>
+          <h5 className='des_title'><i id="round1" class="fa-solid fa-clock"></i> Appoinmenttime </h5>
           <p className='des_data'>9:00 am</p >
-          <h5 className='des_title'>appoinment date</h5>
+          <h5 className='des_title'> <i id="round1" class="fa-solid fa-calendar"></i> Appoinment date </h5>
           <p className='des_data'>29-05-2023</p >
-          <h5 className='des_title'>patientRequested</h5>
+          <h5 className='des_title'> <i id="round1"  class="fa-sharp fa-solid fa-syringe"></i> PatientRequested </h5>
           <p className='des_data'>Blood test</p >
-          <h5 className='des_title'>handledByDoctor</h5>
+          <h5 className='des_title'> <i id="round1" class="fa-solid fa-user-doctor"></i> HandledByDoctor </h5>
           <p className='des_data'>Dr.j.priya</p >
           </div>
 

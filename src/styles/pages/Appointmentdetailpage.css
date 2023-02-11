@@ -2,12 +2,25 @@
     background-color: white;
 }
 .des_title{
-    font-family: 'Acme', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     
 }
 .des_data{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+} 
+#round{
+    color: rgb(21, 193, 21);
+    font-size: 15px;
+    margin-left: 3px;
+}
+#round1{
+    font-size: 15px;
+    margin-left: 3px;
 }
