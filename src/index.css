@@ -1,7 +1,7 @@
 @import 'antd/dist/reset.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
 body{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(247, 247, 247);
 }
 .up{
     margin-top: 20px;

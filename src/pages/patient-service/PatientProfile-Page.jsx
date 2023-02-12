@@ -50,7 +50,7 @@ const PatientProfile = () => {
                                 </div>
                             </div>
                             <div className="buttttttton">
-                                <button className='usr_snd_btn'>Send Message</button>
+                                <button className='usr_snd_btn'><a href='smlogasubramani@gmail.com'>Send Message</a></button>
                             </div>
                         </div>
                         <div className="col">
@@ -60,10 +60,10 @@ const PatientProfile = () => {
                                          Medication
                                     </h5>
                                     <hr />
-                                    <p className='med'><i class="fa-solid fa-capsules"></i>  clapal</p>
-                                    <p className='med'><i class="fa-solid fa-capsules"></i>  citrize</p>
-                                    <p className='med'><i class="fa-solid fa-capsules"></i>  Boreyad</p>
-                                    <p className='med'><i class="fa-solid fa-capsules"></i>  electrol</p>
+                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  clapal</p>
+                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  citrize</p>
+                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  Boreyad</p>
+                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  electrol</p>
                                 </div>
                                 <div className="col">
                                     <h5 id='curr_med' >

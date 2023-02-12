@@ -15,7 +15,7 @@
     margin-bottom: 20px;
 }
 .Pat_prof_title{
-    color: rgb(91, 91, 91);
+    color: rgb(51, 19, 125);
     font-size: larger;
     font-weight: 600;
     font-family: 'Kanit', sans-serif;
@@ -51,20 +51,20 @@
     margin-top: 10px;
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
-    color: rgb(91, 91, 91);
+    color: rgb(51, 19, 125);
     font-size: 20px;
 }
 .patient_prof_prblm{
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Kanit', sans-serif;
-    color: rgb(91, 91, 91);
+    color: rgb(51, 19, 125);
     font-size: 15px;
 }
 .det{
     margin-top: 10px;
     font-family: 'Kanit', sans-serif;
-
+    
     font-size: 16px;
     text-align: center;
     margin-bottom: 5px;
@@ -77,7 +77,7 @@
 
 /* Current medication css */
 #curr_med{
-    color: rgb(91, 91, 91);
+    color: rgb(51, 19, 125);
     font-size: larger;
     font-weight: 500;
     font-family: 'Kanit', sans-serif;
@@ -127,7 +127,9 @@
 }
 #loga{
  font-size: 50px;
+ color: red;
 }
+
 #note{
     font-size: 20px;
 }

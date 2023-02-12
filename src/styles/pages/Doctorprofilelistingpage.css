@@ -1,0 +1,74 @@
+#doc_lst_bck
+{
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.Spl_head{
+    font-size: 20px;
+    color: rgb(51, 19, 125);
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#doc_photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+.doc_name{
+    margin-top: 10px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgb(51, 19, 125);
+    font-size: 18px;
+}
+.doc_spec{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(84, 84, 84);
+}
+.Pat_prof_title1{
+color: rgb(51, 19, 125);
+font-size: larger;
+font-weight: 600;
+margin-top: 20px;
+font-family: 'Kanit', sans-serif;
+margin-bottom: 10px;
+}
+.chs_doc{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(76, 76, 76);
+}
+.time{  
+    color: rgb(51, 19, 125);
+    font-size: medium;
+    margin-top: 20px;
+}
+.view_btn{
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(51, 19, 125);
+    color: rgb(255, 255, 255);
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 20px;
+
+}
+.book_btn{
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(162, 211, 15);
+    color: rgb(255, 255, 255);
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 20px;
+}
