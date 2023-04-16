@@ -14,6 +14,7 @@ import AppoinmentDetailPage from "../pages/patient-service/AppoinmentDetail-Page
 import PatientProfilePage from "../pages/patient-service/PatientProfile-Page";
 import Addmedicalhistory from "../pages/patient-service/Addmedicalhistory";
 import Progressupdate from "../pages/patient-service/Progressupdate";
+import Labtestentry from "../pages/patient-service/Labtestentry";
 import PageNotFound from "../pages/404-Page";
 
 
@@ -25,6 +26,7 @@ const Router = () => (
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/addmedhis" element={<Addmedicalhistory />} />
+            <Route path="/labtestentry" element={<Labtestentry />} />
             <Route path="/progressupdate" element={<Progressupdate />} />
             <Route path="/disease/list" element={<DiseaseListingPage />} />
             <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
