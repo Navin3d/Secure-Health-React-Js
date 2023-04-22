@@ -1,0 +1,84 @@
+.navbar{
+    border: 1px solid rgb(179, 178, 178);
+    background: linear-gradient(to bottom, #f3f5fc, #f8f9f9);
+    border-radius: 5px;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* add a hover effect */
+}
+
+.head-colo{
+    color: rgb(91, 91, 255);
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 900;
+}
+.head-colo-1{
+    color: rgb(91, 91, 255);
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.in-texxt{
+    font-size: 33px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 800;
+    padding-right: 5px;
+    word-spacing: 10px; 
+    color: rgb(23, 23, 23);       
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif; 
+    font-weight: 800;
+    margin-left: 20px;
+}
+.nav-item{
+    font-family: 'Kanit', sans-serif;
+    margin-left: 10px;
+    font-size: 17px;
+    margin-right: 10px;
+    color: black;
+}
+.app-btn{
+    background-color:rgb(91, 91, 255); 
+    color: white;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    position: absolute;
+    bottom: 53%;
+    left: 5%;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .text-container p {
+    margin: 10px 0 0;
+    font-size: 18px;
+  }
+  .text-container button{
+    background-color:rgb(91, 91, 255); 
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+   padding: 10px 10px 10px 10px;
+   margin-top: 20px;
+   border-radius: 5px;
+   font-size: 17px;
+  }
+  
