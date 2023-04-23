@@ -82,9 +82,47 @@ const HomePage = () => {
     <span class="sr-only">Next</span>
   </a>
   </div>
+  <div className="container">
 
-
+    <div className="row">
+      <div className="caro-down-txt">
+        <h2>We Are Always Ready To Help You & <br/> Your Family</h2>
+        <p><i class="fa-sharp fa-solid fa-bed-pulse"></i></p>
+        <h6>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</h6>
+      </div>
+      
+    </div>
+    <div className="row">
+      <div className="col-md-4">
+        <div className="emg-bx">
+          <h2 className='emg-cnt'>Emergency cases</h2>  
+          <p className='emg-cnt-P'>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+          <a href="">
+          <p className='emg-cnt-P'>LEARN MORE   <i id="icon"class="fa-solid fa-arrow-right"></i></p>
+          </a>
         </div>
+      </div>
+      <div className="col-md-4">
+      <div className="emg-bx">
+          <h2 className='emg-cnt'>Doctors Timetable</h2>  
+          <p className='emg-cnt-P'>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+          <a href="">
+          <p className='emg-cnt-P'>LEARN MORE   <i id="icon"class="fa-solid fa-arrow-right"></i></p>
+          </a>
+        </div>
+      </div>
+      <div className="col-md-4">
+      <div className="emg-bx">
+          <h2 className='emg-cnt'>Opening Hours</h2>  
+          <p className='emg-cnt-P'>Monday - Friday  8.00-20.00<br/>Saturday   9.00-18.30<br/>Monday - Thusday   9.00-15.0</p>
+          <a href="">
+          <p className='emg-cnt-P'>LEARN MORE   <i id="icon"class="fa-solid fa-arrow-right"></i></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
     );
 }
 

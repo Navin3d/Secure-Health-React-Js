@@ -8,13 +8,13 @@ a:hover {
 }
 
 .head-colo{
-    color: rgb(91, 91, 255);
+  color: #0074D9;
     font-size: 30px;
     font-family: 'Secular One', sans-serif;
     font-weight: 900;
 }
 .head-colo-1{
-    color: rgb(91, 91, 255);
+  color: #0074D9;
     font-size: 30px;
     font-family: 'Secular One', sans-serif;
     font-weight: 800;
@@ -42,11 +42,12 @@ a:hover {
     color: black;
 }
 .app-btn{
-    background-color:rgb(91, 91, 255); 
+  background: linear-gradient(to bottom, #0074D9, #2f82b9);
     color: white;
     padding: 7px;
     border: 1px solid black;
     border-radius: 5px;
+    font-weight: bolder;
 }
 .image-container {
     position: relative;
@@ -72,7 +73,7 @@ a:hover {
     font-size: 18px;
   }
   .text-container button{
-    background-color:rgb(91, 91, 255); 
+    background: linear-gradient(to bottom, #0074D9, #2f82b9);
     color: white;
     padding: 5px;
     border: 1px solid black;
@@ -81,4 +82,56 @@ a:hover {
    border-radius: 5px;
    font-size: 17px;
   }
+  .caro-down-txt h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Secular One', sans-serif; 
+  }
+  .caro-down-txt p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Secular One', sans-serif; 
+    font-size: 40px;
+   color: #0074D9;
+  }
+  .caro-down-txt h6{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Dongle', sans-serif;  
+    font-size: 25px;
   
+  }
+
+  .emg-bx{
+    box-shadow: 
+  8px 8px 5px rgba(0, 0, 0, 0.3), 
+  1px 1px 5px rgba(255, 255, 255, 1);
+    height: 275px;
+    width: 300px;
+    background: linear-gradient(to bottom, #0074D9, #2f82b9);
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  .emg-cnt{
+    padding-top: 25px;
+    font-size: 28px;
+    margin-left: 15px;
+    font-family: 'Secular One', sans-serif; 
+  }
+  .emg-cnt-P{
+    padding-top: 25px;
+    font-size: 25px;
+    margin-left: 15px;
+    font-family: 'Dongle', sans-serif;
+  }
+  #icon{
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  /* .emg-bx a{
+    text-decoration: none;
+  } */
+  .emg-bx a:hover{
+    color: white;
+  }
