@@ -1,7 +1,57 @@
 .sub-head{
-    color: rgb(90, 90, 216);
+    color: #0074D9;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
 }
 #in-box{
     border: 1px solid black;
 }
 
+.addmed-top{
+    margin-top: 10px;
+}
+.addmed-btn{
+    background: linear-gradient(to bottom, #4cd900, #2fb96d);
+    color: white;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.addmed-head{
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 900;
+}
+#addmed-field{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#addmed-tagline{
+    font-size: 18px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 200;color: rgb(84, 84, 84);
+}
+#addmed-reset-red{
+    background: linear-gradient(to bottom, #a90202, #b92f2f);
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.newrow-btn{
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    padding: 8px;
+    border-radius: 5px;
+    font-family: 300px;
+    font-family: 'Secular One', sans-serif;
+
+}
