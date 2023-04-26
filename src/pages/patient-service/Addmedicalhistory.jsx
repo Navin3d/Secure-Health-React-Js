@@ -261,7 +261,7 @@ const Addmedicalhistory = () => {
             </div>
         </div>
         <hr />
-
+ 
         <div className="row">
         <div className="addmed-top"></div>
             <div className="col-md-1">
