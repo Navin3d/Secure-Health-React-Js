@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import '../../styles/pages/Addmedicalhistory.css'
 import Table from './Addmedtable';
 import Table_acc from '../../components/Addmedtable1'
