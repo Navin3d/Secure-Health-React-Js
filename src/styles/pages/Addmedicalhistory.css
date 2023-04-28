@@ -14,7 +14,12 @@
 #in-box{
     border: 1px solid black;
 }
-
+.disp-p{
+    color: rgb(164, 164, 164);
+    font-size: 25px;
+    font-family: 'Dongle', sans-serif;
+    text-align: left;
+}
 .addmed-top{
     margin-top: 10px;
 }

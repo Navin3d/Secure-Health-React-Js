@@ -10,6 +10,7 @@ import DoctorProfileListingPage from "../pages/doctor-service/DoctorProfileListi
 import DoctorProfilePage from "../pages/doctor-service/DoctorProfile-Page";
 import BookAppoinmentPage from "../pages/patient-service/BookAppoinmentPage";
 import AppoinmentListingPage from "../pages/patient-service/AppoinmentList-Page";
+import Blockpatientdisp from "../pages/patient-service/Blockpatientdisp";
 import AppoinmentDetailPage from "../pages/patient-service/AppoinmentDetail-Page";
 import PatientProfilePage from "../pages/patient-service/PatientProfile-Page";
 import Addmedicalhistory from "../pages/patient-service/Addmedicalhistory";
@@ -18,7 +19,7 @@ import Labtestentry from "../pages/patient-service/Labtestentry";
 import Dischargesummary from "../pages/patient-service/Dischargesummary";
 import Blockpatient from "../pages/patient-service/Blockpatient";
 import PageNotFound from "../pages/404-Page";
-
+import Dischargesummarydisp from "../pages/patient-service/Dischargesummarydisp";
 
 const Router = () => (
     <BrowserRouter>
@@ -30,6 +31,8 @@ const Router = () => (
             <Route path="/discharge" element={<Dischargesummary />} />
             <Route path="/addmedhis" element={<Addmedicalhistory />} />
             <Route path="/blockpat" element={<Blockpatient />} />
+            <Route path="/dischargedisp" element={<Dischargesummarydisp />} />
+            <Route path="/blockpatdisp" element={<Blockpatientdisp />} />
             <Route path="/labtestentry" element={<Labtestentry />} />
             <Route path="/progressupdate" element={<Progressupdate />} />
             <Route path="/disease/list" element={<DiseaseListingPage />} />
