@@ -3,12 +3,23 @@
     font-size: 25px;
     font-family: 'Kanit', sans-serif;
 }
+.sub-head1{
+    color: #0074D9;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin-top: 25px;   
+    font-weight: 500;
+}
 #in-box{
     border: 1px solid black;
 }
 
 .addmed-top{
     margin-top: 10px;
+}
+.addmed-top1{ 
+    margin-top: 40px;
 }
 .addmed-btn{
     background: linear-gradient(to bottom, #4cd900, #2fb96d);
@@ -20,6 +31,7 @@
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
 }
+
 .addmed-head{
     font-size: 30px;
     font-family: 'Secular One', sans-serif;
@@ -28,6 +40,11 @@
 #addmed-field{
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
+}
+#addmed-field1{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
 }
 
 #addmed-tagline{
@@ -54,4 +71,17 @@
     font-family: 300px;
     font-family: 'Secular One', sans-serif;
 
+}
+
+.dsbg{
+    background-image: url('../../assets/images/background.jpg');
+    height: 100vh;
+}
+.ds-form{
+ margin-top: 60px;
+ height: 700px;
+ width: 600px;
+ border: 1px solid rgb(88, 172, 98);
+ background-color: white;
+ border-radius: 10px;
 }

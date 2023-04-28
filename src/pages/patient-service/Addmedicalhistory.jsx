@@ -1,6 +1,6 @@
 import React from 'react' 
 import '../../styles/pages/Addmedicalhistory.css'
-import Table from './Addmedtable';
+import Table from '../../components/Addmedtable';
 import Table_acc from '../../components/Addmedtable1'
 import Table_prblm from '../../components/Addmedtable2';
 const options = [

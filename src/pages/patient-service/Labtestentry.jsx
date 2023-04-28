@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/pages/Addmedicalhistory.css'
-import Labtest from '../../components/Labtestentrytable'
+import Labtest_entry from '../../components/Labtestentrytable'
 const Labtestentry = () => {
   return (
     <div>
@@ -46,7 +46,7 @@ const Labtestentry = () => {
             </tr>
         </table> */}
         <div> 
-            <Labtest/>
+            <Labtest_entry/>
         </div>
 
         <div className="row">

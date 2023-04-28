@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Labtest_entry() {
+function Table() {
   const [data, setData] = useState([{ name: "", age: "" }]);
 
   const addRow = () => {
@@ -25,11 +25,10 @@ function Labtest_entry() {
       <table>
         <thead>
           <tr>
-            <th>Test</th>
-            <th>Low value</th>
-            <th>High value</th>
-            <th>Result value</th>
-            <th>Measure value</th>
+            <th>Medication</th>
+            <th>Milligrams</th>
+            <th>S,H , V , OTC</th>
+            <th>Milligrams</th>
           </tr>
         </thead>
         <tbody>
@@ -38,16 +37,16 @@ function Labtest_entry() {
               <td>
                 <input
                   type="text"
-                  name="doc"
-                  value={row.doc}
+                  name="medication"
+                  value={row.medication}
                   onChange={(event) => handleInputChange(event, index)}
                 />
               </td>
               <td>
                 <input
                   type="number"
-                  name="Year"
-                  value={row.Year}
+                  name="milli"
+                  value={row.milli}
                   onChange={(event) => handleInputChange(event, index)}
                 />
               </td>
@@ -67,14 +66,6 @@ function Labtest_entry() {
                   onChange={(event) => handleInputChange(event, index)}
                 />
               </td>
-              <td>
-              <input
-                  type="number"
-                  name="data"
-                  value={row.data}
-                  onChange={(event) => handleInputChange(event, index)}
-                />
-              </td>
             </tr>
           ))}
         </tbody>
@@ -86,4 +77,4 @@ function Labtest_entry() {
   );
 }
 
-export default Labtest_entry;
+export default Table;
