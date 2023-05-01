@@ -29,7 +29,7 @@ const Router = () => (
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/discharge" element={<Dischargesummary />} />
-            <Route path="/addmedhis" element={<Addmedicalhistory />} />
+            <Route path="/addmedhis" element={<Addmedicalhistory />} /> 
             <Route path="/blockpat" element={<Blockpatient />} />
             <Route path="/dischargedisp" element={<Dischargesummarydisp />} />
             <Route path="/blockpatdisp" element={<Blockpatientdisp />} />

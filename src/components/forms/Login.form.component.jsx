@@ -31,8 +31,15 @@ const LoginForm = () => {
             const decodedData = jwt_decode(auth);
             console.log(decodedData.sub);
             setCookies("Authorization", authorization);
+            localStorage.setItem("Authorization", authorization);
             setCookies("Refresh_Token", refreshToken);
-            auth.includes("PAT-") ? setCookies("Patient_Id", decodedData.sub) : setCookies("Doctor_Id", decodedData.sub);
+            auth.includes("PAT-") ? (
+                // setCookies("Patient_Id", decodedData.sub),
+                localStorage.setItem("UserId", decodedData.sub)
+            ) : (
+                // setCookies("Doctor_Id", decodedData.sub),
+                localStorage.setItem("UserId", decodedData.sub)
+            );
             setCookies("Logged-In", true);
             navigate("/")
         }).catch((e) => {
