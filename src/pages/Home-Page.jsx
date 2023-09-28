@@ -7,6 +7,7 @@ import covid from '../assets/images/covid.jpg'
 import caros4 from '../assets/images/caros-4.jpeg'
 import caros5 from '../assets/images/caros-5.jpeg'
 import caros6 from '../assets/images/caros-6.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
     return (
@@ -116,6 +117,14 @@ const HomePage = () => {
           <p className='emg-cnt-P'>LEARN MORE   <i id="icon"class="fa-solid fa-arrow-right"></i></p>
           </a>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
       <div className="col">
       <div className="emg-bx">
