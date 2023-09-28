@@ -1,7 +1,12 @@
 import '../styles/pages/homepage.css'
+import '../styles/pages/Addmedicalhistory.css'
 import caros from '../assets/images/caros-3.jpeg'
 import caros1 from '../assets/images/caros-7.jpeg'
 import caros2 from '../assets/images/caros-6.jpeg'
+import covid from '../assets/images/covid.jpg'
+import caros4 from '../assets/images/caros-4.jpeg'
+import caros5 from '../assets/images/caros-5.jpeg'
+import caros6 from '../assets/images/caros-6.jpeg'
 
 const HomePage = () => {
     return (
@@ -14,16 +19,16 @@ const HomePage = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/doctor/list">Doctor <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="/addmedhis">Add details</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="/labtestentry">Labtest</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Disabled</a>
+        <a class="nav-link" href="/patient/profile">profile</a>
       </li>
       <li class="nav-item">
       <button className='app-btn'>Get Appointment</button>
@@ -93,7 +98,8 @@ const HomePage = () => {
       
     </div>
     <div className="row">
-      <div className="col-md-4">
+      <div className="col-md-1"></div>
+      <div className="col">
         <div className="emg-bx">
           <h2 className='emg-cnt'>Emergency cases</h2>  
           <p className='emg-cnt-P'>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
@@ -102,7 +108,7 @@ const HomePage = () => {
           </a>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col">
       <div className="emg-bx">
           <h2 className='emg-cnt'>Doctors Timetable</h2>  
           <p className='emg-cnt-P'>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
@@ -111,7 +117,7 @@ const HomePage = () => {
           </a>
         </div>
       </div>
-      <div className="col-md-4">
+      <div className="col">
       <div className="emg-bx">
           <h2 className='emg-cnt'>Opening Hours</h2>  
           <p className='emg-cnt-P'>Monday - Friday  8.00-20.00<br/>Saturday   9.00-18.30<br/>Monday - Thusday   9.00-15.0</p>
@@ -120,8 +126,117 @@ const HomePage = () => {
           </a>
         </div>
       </div>
+      <div className="col-md-1"></div>
     </div>
-  </div>
+    </div>
+    <div className="section-top"></div>
+      <div className="row">
+      <div className="image-container1">
+      <img src={covid} alt="Your image" />
+      <div className="content">
+       <h1>Do you need Emergency Medical <br/> Care? Call @ 9790778113</h1>
+       <div className="home-top"></div>
+      <p>Empowering patients with reliable and accessible healthcare information to make informed decisions.</p>
+      </div>
+    </div>
+      </div>
+
+      <div className="home-top"></div>
+    <div className="row">
+      <div className="caro-down-txt">
+        <h2>We Offer Different Services<br/> To Improve Your Health</h2>
+        <p><i class="fa-sharp fa-solid fa-bed-pulse"></i></p>
+        <h6>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</h6>
+      </div>
+      
+    </div>
+    <div className="home-top"></div>
+    <div className="row">
+      <div className="home-box">
+        <div className="row">
+          <div className="col"></div>
+          <div className="col">
+            <img className='footup-img' src={caros4} alt="" />
+          </div>
+          <div className="col">
+          <img  className='footup-img' src={caros5} alt="" />
+          </div>
+          <div className="col">
+          <img  className='footup-img' src={caros6} alt="" />
+          </div>
+          <div className="col"></div>
+        </div>
+      </div>
+    </div>
+    <div className="home-top"></div>
+
+    <div className="footer-background">
+        <footer>
+            <div class="row">
+              <div className="col-md-1"></div>
+
+                <div class="col">
+                  <div className="addmed-top"></div>
+                    <h5>Follow us on :</h5><br/>
+                    <a href="https://www.linkedin.com/in/smnavindurai/"><span>
+                            <i class="fa-brands fa-linkedin"></i>
+                            </span>&nbsp;{' '}Linked-In.</a><br/><br/>
+                    <a href="https://github.com/Navin3d"><span>
+                    <i class="fa-brands fa-github"></i> 
+                            </span>&nbsp;{' '}Github.</a><br/><br/><br/><br/>
+                </div>
+                <div class="col">
+                <div className="addmed-top"></div>
+                    <h5>Connect with us on :</h5><br/>
+                    <a href="https://www.instagram.com/mr_navin.s.m/"><span>
+                    <i class="fa-brands fa-instagram"></i>
+                            </span>&nbsp;{' '} Instagram.</a><br/><br/>
+                    <a href="https://twitter.com/S_M_Navin_Durai"><span>
+                        <i class="fa-brands fa-twitter"></i>
+                            </span>&nbsp;{' '} Twitter.</a><br/><br/>
+                    <a href="https://www.facebook.com/"><span>
+                    <i class="fa-brands fa-facebook"></i>
+                            </span>&nbsp;{' '} Facebook.</a><br/><br/>
+
+                </div>
+          
+                    <div className='col '>
+                    <div className="addmed-top"></div>
+                        <div className='contact-item'>
+                        <h5>Contact Info</h5><br/>
+                        <p>
+                            <span>
+                            <i className='fa fa-phone'></i>&nbsp; Address
+                            </span>{' '}
+                            Chennai
+                        </p>
+                        </div>
+                        <div className="addmed-top"></div>
+                        <div className='contact-item'>
+                        <p>
+                            <span>
+                            <i className='fa fa-phone'></i>&nbsp; Phone
+                            </span>{' '}
+                            9790778113
+                        </p>
+                        </div>
+                        {/* <div className='contact-item'>
+                        <p>
+                            <span>
+                            <i className='fa fa-envelope-o'></i>&nbsp; Email
+                            </span>{' '}
+                            info.securehealth@gmail.com
+                        </p>
+                        </div> */}
+                </div>
+                <div className="col-md-1"></div>
+            </div>
+        </footer>  
+        </div>
+
+
+    
+
   </div>
     );
 }

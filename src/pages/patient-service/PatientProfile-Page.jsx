@@ -1,6 +1,16 @@
+import { useState, useEffect } from 'react';
 import '../../styles/pages/Patientprofile.css'
 import pat_profle from '../../assets/images/profile.jpg'
+const INITIAL_PATIENT = {
+    name: "kaushik",
+    dob: "2992-11-31" 
+};
 const PatientProfile = () => {
+    const [patientData, setPatient] = useState(INITIAL_PATIENT);
+
+    useEffect(() => {
+        setPatient((prev) => ({...prev, "name": "monish"}));
+    }, []);
     return (
         <div>
             {/* starting at 9:30 on 11-02-2023 */}
@@ -15,12 +25,12 @@ const PatientProfile = () => {
                             <div className="row">
                                 <div className="col" id='pat_per_details'>
                                     <img className='Pat_img' src={pat_profle} alt="loga" />
-                                    <h4 className='patient_prof_name'>John Adam</h4>
+                                    <h4 className='patient_prof_name'>{ patientData.name }</h4>
                                     <p className='patient_prof_prblm'>Allergy</p>
                                     <div className="row">
                                         <div className="col">
                                             <h6 className='det'>DOB</h6>
-                                            <p id='det_ans'>03/03/1909</p>
+                                            <p id='det_ans'>{ patientData.dob }</p>
                                             <h6 className='det'>Weight</h6>
                                             <p id='det_ans'>168 lb</p>
                                             <h6 className='det'>Blood group</h6>
