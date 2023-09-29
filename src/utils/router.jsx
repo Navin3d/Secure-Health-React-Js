@@ -20,10 +20,11 @@ import Dischargesummary from "../pages/patient-service/Dischargesummary";
 import Blockpatient from "../pages/patient-service/Blockpatient";
 import PageNotFound from "../pages/404-Page";
 import Dischargesummarydisp from "../pages/patient-service/Dischargesummarydisp";
+import Doctorappoinmentlist from "../pages/doctor-service/Doctorappoinmentlist";
 
 const Router = () => (
     <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
             <Route path="/" element={<HomePage />} exact={true} />
             <Route path="/login" element={<LoginPage />} />
@@ -42,6 +43,8 @@ const Router = () => (
             <Route path="/appoinment/list" element={<AppoinmentListingPage />} />
             <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
             <Route path="/patient/profile" element={<PatientProfilePage />} />
+            {/* 29-09-2023 edit by loga */}
+            <Route path="/doctor/appoinment" element={<Doctorappoinmentlist/>}/>
             <Route path="*" element={<PageNotFound />} />
         </Routes>
     </BrowserRouter>

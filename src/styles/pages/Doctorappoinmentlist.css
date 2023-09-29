@@ -1,0 +1,99 @@
+.appoinmentlist-head{
+font-size: 35px;
+font-family: 'Secular One', sans-serif;
+font-weight: 900;
+color: #0074D9;
+text-align: center;
+margin-top: 40px;
+text-transform: capitalize;
+letter-spacing: 5px;
+animation: fadeIn 2s ease-in-out;
+}
+#partition-head{
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+.appoinment-list-subhead{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    animation: fadeIn 2s ease-in-out;
+}
+.card{
+    width: 18rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 1px 9px 1px #bababa;
+    margin-top: 30px;
+}
+
+#card-subcontents{
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 600;
+}
+#card-title{
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+#card-text{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+.card-subcontents{
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 300;
+}
+#buton-font{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#partition-doc-name{
+    font-family: 'Secular One', sans-serif;
+    color: #000000;
+    margin-top: 20px;
+    text-transform: capitalize; 
+}
+.appoinment-doc-subhead{
+    font-size: 15xpx;
+    font-family: Georgia, 'Times New Roman', Times, serif   ;
+    font-weight: 900;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+#fade{
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
