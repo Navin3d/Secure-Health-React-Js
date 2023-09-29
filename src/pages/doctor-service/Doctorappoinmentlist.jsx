@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import '../../styles/pages/Doctorappoinmentlist.css';
 // import img from '../../assets/images/caros-2.jpeg'
+import TimeReschedule from '../../components/mui/TimeReschedule.jsx';
 
 const DOCTOR_DATA ={
     name : "Raja Priyah",
@@ -38,6 +39,7 @@ const PATIENT_APPOINMENT_DATA =[
 const Doctorappoinmentlist = () => {
     const[patientappoinmentData, setPatientAppoinmentdata] = useState(PATIENT_APPOINMENT_DATA);
     const[doctorname , setdoctorname] = useState(DOCTOR_DATA);
+
     return (
     <div>
 
@@ -53,8 +55,8 @@ const Doctorappoinmentlist = () => {
             <div id='fade' className="container">
             <div className="row">
             {/* need to be fetched from the doctor who logs in */}
-                <h2 id='partition-doc-name'> Hey! Dr.{doctorname.name}</h2>
-                <p className='appoinment-doc-subhead' >Patients in your schedule</p> 
+                <h2 id='partition-doc-name'> Hello! Dr.{doctorname.name}</h2>
+                <p className='appoinment-doc-subhead' >Patients in your schedule today!</p> 
             </div>
 
             <div className="space"></div>
@@ -78,7 +80,7 @@ const Doctorappoinmentlist = () => {
                         <button><a href="#" id="buton-font" class="btn btn-success">ACCEPT</a></button>
                         </div>
                         <div className="col">
-                      <button><a href="#"  id="buton-font" class="btn btn-warning">RESCHEDULE</a></button>
+                    <a href="#"  id="buton-font"><TimeReschedule/></a>
                       </div>
                       </div>
                     </div>

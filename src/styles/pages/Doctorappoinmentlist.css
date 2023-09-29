@@ -97,3 +97,25 @@ animation: fadeIn 2s ease-in-out;
       opacity: 1;
     }
   }
+
+  #dialogue-title{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding: 30px;
+    text-align: center;
+  }
+
+  #dialogue-subtext{
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding-bottom: 30px;
+    padding-left:100px ;
+    padding-right:100px ;
+  }
+
+#time label{
+    font-size: larger;
+    font-weight: 900;
+}

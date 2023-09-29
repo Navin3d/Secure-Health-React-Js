@@ -24,7 +24,7 @@ import Doctorappoinmentlist from "../pages/doctor-service/Doctorappoinmentlist";
 
 const Router = () => (
     <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
             <Route path="/" element={<HomePage />} exact={true} />
             <Route path="/login" element={<LoginPage />} />
