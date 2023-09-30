@@ -77,7 +77,7 @@ const Doctorappoinmentlist = () => {
                     <div class="card-body">
                         <div className="row">
                         <div className="col">
-                        <button><a href="#" id="buton-font" class="btn btn-success">ACCEPT</a></button>
+                        <button><a href="/docpat/auth" id="buton-font" class="btn btn-success">ACCEPT</a></button>
                         </div>
                         <div className="col">
                     <a href="#"  id="buton-font"><TimeReschedule/></a>

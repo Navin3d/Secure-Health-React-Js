@@ -21,6 +21,8 @@ import Blockpatient from "../pages/patient-service/Blockpatient";
 import PageNotFound from "../pages/404-Page";
 import Dischargesummarydisp from "../pages/patient-service/Dischargesummarydisp";
 import Doctorappoinmentlist from "../pages/doctor-service/Doctorappoinmentlist";
+import Doctorpatientauth from "../pages/doctor-service/Doctorpatientauth";
+import PatientDocdetails from "../components/forms/PatientDocdetails";
 
 const Router = () => (
     <BrowserRouter>
@@ -45,6 +47,10 @@ const Router = () => (
             <Route path="/patient/profile" element={<PatientProfilePage />} />
             {/* 29-09-2023 edit by loga */}
             <Route path="/doctor/appoinment" element={<Doctorappoinmentlist/>}/>
+            <Route path="/docpat/auth" element={<Doctorpatientauth/>}/>
+            <Route path="/test" element={<PatientDocdetails/>}/>
+
+
             <Route path="*" element={<PageNotFound />} />
         </Routes>
     </BrowserRouter>

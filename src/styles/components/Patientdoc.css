@@ -1,0 +1,42 @@
+.show-details{
+    position: relative;
+    top: 15vh;
+    margin-left: 30%;
+    border: 1px solid black;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: white;
+}
+
+#push-right-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#push-left-content{
+    margin-left: 80px;
+}
+
+#Pat_img{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+#personal-details{
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: large;
+    padding-bottom: 20px;
+}
+.personal-details-color{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 500;
+    color: blue;
+}

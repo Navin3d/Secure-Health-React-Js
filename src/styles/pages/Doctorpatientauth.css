@@ -1,0 +1,92 @@
+#whole-page{
+    background-image: url(../../assets/images/background.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
+.verification-box{
+    height: 55vh;
+    background: white;
+    width: 30vw;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 8px 3px 3px rgb(135, 135, 135);
+}
+.auth-head{
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+    color: #000000;
+    text-align: center;
+    padding: 30px;
+}
+.partition-auth-head{
+    font-size: 35px;
+    font-family: 'Secular One', sans-serif;
+    color: #24289c;
+}
+.verification-subtext{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.auth-subtext{
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+.auth-person{
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+
+}
+.input-biometric-label{
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-size: large;
+
+}
+
+.input-auth-biometric{
+    border: 1px solid rgb(39, 59, 238);
+    width: 370px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+#btn-auth-biometric{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: 30px;
+}
+#learn-more{
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    color: blue;
+
+}
