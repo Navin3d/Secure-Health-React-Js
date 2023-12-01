@@ -138,3 +138,23 @@ a:hover{
 #note{
     font-size: 20px;
 }
+
+.add-his-btn{
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(27, 9, 78);
+    border: 1px solid violet;
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 20px;
+    text-decoration: none;  
+}
+
+.add-his-btn:hover{
+
+    background-color: rgb(39, 7, 128);;
+    color: rgb(255, 255, 255);
+    
+}

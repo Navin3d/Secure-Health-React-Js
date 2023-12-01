@@ -55,7 +55,7 @@ const Dischargesummary = () => {
                             <div className="col"></div>
                             <div className="col"></div>
                             <div className="col">
-                                <button className='addmed-btn'>Submit</button>
+                                <button className='addmed-btn'><a href="/dischargedisp">Submit</a></button>
                             </div>
                             <div className="col"></div>
                             <div className="col"></div>

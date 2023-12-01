@@ -16,7 +16,7 @@ const Addmedicalhistory = () => {
     <div>
         <div className="container">
         <div className="row">
-        <h5 className='addmed-head'>Add Medical History</h5>
+        <h5 className='addmed-head'>Add Medical Record</h5>
         <hr />
         </div>
         <div className="row">

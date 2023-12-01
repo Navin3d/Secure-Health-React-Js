@@ -34,6 +34,7 @@ const styles = {
     fontSize: '36px',
     marginLeft: '50px'
   }
+
 };
 
 class AppoinmentDetail extends React.Component {
@@ -86,6 +87,7 @@ class AppoinmentDetail extends React.Component {
           <p className='des_data'>Blood test</p >
           <h5 className='des_title'> <i id="round1" class="fa-solid fa-user-doctor"></i> HandledByDoctor </h5>
           <p className='des_data'>Dr.j.priya</p >
+          <button className='des_view'><a href="/docpat/auth">view</a></button>
           </div>
 
         </div>

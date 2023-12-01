@@ -42,15 +42,13 @@ const Router = () => (
             <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
             <Route path="/doctor/:did" element={<DoctorProfilePage />} />
             <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
-            <Route path="/appoinment/list" element={<AppoinmentListingPage />} />
+            <Route path="/appoinment/list" element={<AppoinmentListingPage/>} />
             <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
             <Route path="/patient/profile" element={<PatientProfilePage />} />
             {/* 29-09-2023 edit by loga */}
             <Route path="/doctor/appoinment" element={<Doctorappoinmentlist/>}/>
             <Route path="/docpat/auth" element={<Doctorpatientauth/>}/>
             <Route path="/test" element={<PatientDocdetails/>}/>
-
-
             <Route path="*" element={<PageNotFound />} />
         </Routes>
     </BrowserRouter>

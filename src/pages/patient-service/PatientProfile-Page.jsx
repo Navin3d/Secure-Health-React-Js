@@ -153,6 +153,12 @@ const PatientProfile = () => {
                         </div>
                     </div>
                     <div className="down"></div>
+                    <div className="row">
+                        <div className="col"><button className='add-his-btn'><a href="/addmedhis">Add medical history</a></button></div>
+                        <div className="col"><button className='add-his-btn'><a href="/discharge">Discharge</a></button></div>
+                        <div className="col"><button className='add-his-btn'><a href="/labtestentry">Lab history</a></button></div>
+                    </div>
+                    <div className="down"></div>
                 </div>
         </div>
     );
