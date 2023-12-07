@@ -7,7 +7,7 @@ import covid from '../assets/images/covid.jpg'
 import caros4 from '../assets/images/caros-4.jpeg'
 import caros5 from '../assets/images/caros-5.jpeg'
 import caros6 from '../assets/images/caros-6.jpeg'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
     return (
