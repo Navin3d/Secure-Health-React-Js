@@ -32,7 +32,7 @@ const HomePage = () => {
         <a class="nav-link" href="/patient/profile">profile</a>
       </li>
       <li class="nav-item">
-      <button className='app-btn'>Get Appointment</button>
+      <button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>
       </li>
     </ul>
   </div>

@@ -1,13 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
-import Navbar from "../components/Navbar";
 import HomePage from "../pages/Home-Page";
 import LoginPage from "../pages/auth-service/Login-Page";
 import SignUpPage from "../pages/auth-service/SignUp-Page";
-import DiseaseListingPage from "../pages/doctor-service/DiseaseListing-Page";
+// import DiseaseListingPage from "../pages/doctor-service/DiseaseListing-Page";
 import DoctorProfileListingPage from "../pages/doctor-service/DoctorProfileListing-Page";
-import DoctorProfilePage from "../pages/doctor-service/DoctorProfile-Page";
+// import DoctorProfilePage from "../pages/doctor-service/DoctorProfile-Page";
 import BookAppoinmentPage from "../pages/patient-service/BookAppoinmentPage";
 import AppoinmentListingPage from "../pages/patient-service/AppoinmentList-Page";
 import Blockpatientdisp from "../pages/patient-service/Blockpatientdisp";
@@ -26,7 +23,6 @@ import PatientDocdetails from "../components/forms/PatientDocdetails";
 
 const Router = () => (
     <BrowserRouter>
-        {/* <Navbar /> */}
         <Routes>
             <Route path="/" element={<HomePage />} exact={true} />
             <Route path="/login" element={<LoginPage />} />
@@ -38,9 +34,7 @@ const Router = () => (
             <Route path="/blockpatdisp" element={<Blockpatientdisp />} />
             <Route path="/labtestentry" element={<Labtestentry />} />
             <Route path="/progressupdate" element={<Progressupdate />} />
-            <Route path="/disease/list" element={<DiseaseListingPage />} />
             <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
-            <Route path="/doctor/:did" element={<DoctorProfilePage />} />
             <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
             <Route path="/appoinment/list" element={<AppoinmentListingPage/>} />
             <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
