@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AlertDialog from './mui/Mlpopup';
 
 const Fileupload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -33,7 +34,7 @@ const Fileupload = () => {
             <div className="col"></div>
             <div className="row">
                 <div className="col">
-                <Link to='/doctor/list'><button className='submit-btn' onClick={handleSubmit}>Submit</button></Link>
+                <button className='submit-btn' onClick={handleSubmit}><AlertDialog/></button>
                 </div>
                 <div className="col"></div>
                 <div className="col"></div>
