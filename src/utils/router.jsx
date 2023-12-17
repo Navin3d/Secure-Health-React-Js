@@ -20,13 +20,17 @@ import Dischargesummarydisp from "../pages/patient-service/Dischargesummarydisp"
 import Doctorappoinmentlist from "../pages/doctor-service/Doctorappoinmentlist";
 import Doctorpatientauth from "../pages/doctor-service/Doctorpatientauth";
 import PatientDocdetails from "../components/forms/PatientDocdetails";
-
+import Uploaddoc from "../pages/patient-service/Uploaddoc";
 const Router = () => (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<HomePage />} exact={true} />
-            <Route path="/login" element={<LoginPage />} />
+            {/* Common portal */}
+            <Route path="/login" element={<LoginPage />} />         
             <Route path="/signup" element={<SignUpPage />} />
+            {/* patient portal */}
+            <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
+            <Route path="/uploaddocs" element={<Uploaddoc />} />
             <Route path="/discharge" element={<Dischargesummary />} />
             <Route path="/addmedhis" element={<Addmedicalhistory />} /> 
             <Route path="/blockpat" element={<Blockpatient />} />
@@ -35,7 +39,6 @@ const Router = () => (
             <Route path="/labtestentry" element={<Labtestentry />} />
             <Route path="/progressupdate" element={<Progressupdate />} />
             <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
-            <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
             <Route path="/appoinment/list" element={<AppoinmentListingPage/>} />
             <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
             <Route path="/patient/profile" element={<PatientProfilePage />} />

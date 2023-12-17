@@ -23,7 +23,7 @@ const HomePage = () => {
         <a class="nav-link" href="/doctor/list">Doctor <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/addmedhis">Add details</a>
+        <a class="nav-link" href="/uploaddocs">Diagnose</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/labtestentry">Labtest</a>
