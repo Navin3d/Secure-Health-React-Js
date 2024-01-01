@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react';
 
 const HomePage = () => {
   const [decodedData, setDecodedData] = useState(null);
-  
+
   useEffect(() => {
     const userId = localStorage.getItem('UserId');
     if (userId.includes("PAT")) {
