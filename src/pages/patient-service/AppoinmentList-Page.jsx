@@ -3,7 +3,9 @@ import '../../styles/pages/Appointmentlist.css'
 import Appointmentdetail from '../patient-service/AppoinmentDetail-Page'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 const AppoinmentList = () => {
+    const navigate = useNavigate();
     let [appoinments, setAppoinments] = useState([]);
     const getAllAppoinments = async () => {
         let headers = { "Authorization": localStorage.getItem("Authorization") };
@@ -21,7 +23,11 @@ const AppoinmentList = () => {
         console.log(appoinments);
     }
     useEffect(() => {
+        if(!localStorage.getItem("UserId")){
+            navigate('/login');
+        }
         getAllAppoinments();
+        
     }, [])
     return (
         <div>

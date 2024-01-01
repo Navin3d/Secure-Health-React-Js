@@ -8,11 +8,26 @@ import caros4 from '../assets/images/caros-4.jpeg'
 import caros5 from '../assets/images/caros-5.jpeg'
 import caros6 from '../assets/images/caros-6.jpeg'
 // import { useNavigate } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+
 
 const HomePage = () => {
+  const [decodedData, setDecodedData] = useState(null);
+  
+  useEffect(() => {
+    const userId = localStorage.getItem('UserId');
+    if (userId.includes("PAT")) {
+      setDecodedData(userId);
+      console.log("true");
+    } else {
+      console.log('false');
+    }
+  }, []);
+
+
     return (
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#"><span className='head-colo'>Secure</span>Health</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,19 +35,19 @@ const HomePage = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="/doctor/list">Doctor <span class="sr-only">(current)</span></a>
+        {decodedData && decodedData.includes("PAT")?null:(<a class="nav-link"  href="/doctor/list">Doctor <span class="sr-only">(current)</span></a>)}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/uploaddocs">Diagnose</a>
+      {decodedData && decodedData.includes("DOC")?null:(<a class="nav-link"  href="/doctor/list">Diagnose <span class="sr-only">(current)</span></a>)}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/labtestentry">Labtest</a>
+      {decodedData && decodedData.includes("DOC")?null:(<a class="nav-link"  href="/doctor/list">Labtest <span class="sr-only">(current)</span></a>)}
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/patient/profile">profile</a>
       </li>
       <li class="nav-item">
-      <button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>
+      {decodedData && decodedData.includes("DOC")?null:(<button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>)}
       </li>
     </ul>
   </div>
