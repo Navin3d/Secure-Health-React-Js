@@ -35,19 +35,19 @@ const HomePage = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item ">
-        {decodedData && decodedData.includes("PAT")?null:(<a class="nav-link"  href="/doctor/list">Doctor <span class="sr-only">(current)</span></a>)}
+        {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">Doctor<span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("DOC")?null:(<a class="nav-link"  href="/doctor/list">Diagnose <span class="sr-only">(current)</span></a>)}
+      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">Diagnose <span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("DOC")?null:(<a class="nav-link"  href="/doctor/list">Labtest <span class="sr-only">(current)</span></a>)}
+      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">profile <span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/patient/profile">profile</a>
+      {decodedData && decodedData.includes("PAT")?(<button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("DOC")?null:(<button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>)}
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/doctor/list">Labtest <span class="sr-only">(current)</span></a>):null}
       </li>
     </ul>
   </div>
