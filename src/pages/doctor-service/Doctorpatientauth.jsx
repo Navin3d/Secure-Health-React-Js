@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import TextField from '@mui/material/TextField';
 import '../../styles/pages/Doctorpatientauth.css'
 import PatientDocdetails from '../../components/forms/PatientDocdetails';
 
