@@ -19,7 +19,7 @@ import PageNotFound from "../pages/404-Page";
 import Dischargesummarydisp from "../pages/patient-service/Dischargesummarydisp";
 import Doctorappoinmentlist from "../pages/doctor-service/Doctorappoinmentlist";
 import Doctorpatientauth from "../pages/doctor-service/Doctorpatientauth";
-import PatientDocdetails from "../components/forms/PatientDocdetails";
+// import PatientDocdetails from "../components/forms/PatientDocdetails";
 import Uploaddoc from "../pages/patient-service/Uploaddoc";
 const Router = () => (
     <BrowserRouter>

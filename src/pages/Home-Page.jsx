@@ -194,7 +194,6 @@ const HomePage = () => {
     <div className="row">
       <div className="home-box">
         <div className="row">
-          <div className="col"></div>
           <div className="col">
             <img className='footup-img' src={caros4} alt="" />
           </div>
@@ -204,7 +203,7 @@ const HomePage = () => {
           <div className="col">
           <img  className='footup-img' src={caros6} alt="" />
           </div>
-          <div className="col"></div>
+    
         </div>
       </div>
     </div>
