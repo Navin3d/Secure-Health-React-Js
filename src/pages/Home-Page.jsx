@@ -16,14 +16,15 @@ const HomePage = () => {
 
   useEffect(() => {
     const userId = localStorage.getItem('UserId');
+    setDecodedData(userId);
     if (userId.includes("PAT")) {
-      setDecodedData(userId);
       console.log("true");
     } else {
-      console.log('false');
+      console.log("false");
     }
   }, []);
 
+  
 
     return (
   <div>
@@ -38,16 +39,31 @@ const HomePage = () => {
         {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">Doctor<span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">Diagnose <span class="sr-only">(current)</span></a>):null}
+      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/uploaddocs">Diagnose <span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/doctor/list">profile <span class="sr-only">(current)</span></a>):null}
+      {decodedData && decodedData.includes("PAT")?(<a class="nav-link"  href="/patient/profile">profile <span class="sr-only">(current)</span></a>):null}
       </li>
       <li class="nav-item">
       {decodedData && decodedData.includes("PAT")?(<button className='app-btn'><a href="/appoinment/book">Get Appointment</a></button>):null}
       </li>
       <li class="nav-item">
-      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/doctor/list">Labtest <span class="sr-only">(current)</span></a>):null}
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/labtestentry">Labtest<span class="sr-only">(current)</span></a>):null}
+      </li>
+      <li class="nav-item">
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/addmedhis">MedicalHistory<span class="sr-only">(current)</span></a>):null}
+      </li>
+      <li class="nav-item">
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/discharge">Discharge<span class="sr-only">(current)</span></a>):null}
+      </li>
+      <li class="nav-item">
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="/blockpat">VitalCard<span class="sr-only">(current)</span></a>):null}
+      </li>
+      <li class="nav-item">
+      {decodedData && decodedData.includes("DOC")?(<a class="nav-link"  href="progressupdate">CheckupForm <span class="sr-only">(current)</span></a>):null}
+      </li>
+      <li class="nav-item">
+      {decodedData && decodedData.includes("DOC")?(<button className='app-btn'><a href="/doctor/appoinment">Appointment</a></button>):null}
       </li>
     </ul>
   </div>

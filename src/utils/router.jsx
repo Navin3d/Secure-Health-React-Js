@@ -29,24 +29,31 @@ const Router = () => (
             <Route path="/login" element={<LoginPage />} />         
             <Route path="/signup" element={<SignUpPage />} />
             {/* patient portal */}
-            <Route path="/appoinment/book" element={<BookAppoinmentPage />} />
+            {/* Book appointment button redirect home page */}
+            <Route path="/appoinment/book" element={<BookAppoinmentPage />} />  
             <Route path="/uploaddocs" element={<Uploaddoc />} />
+            <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
+            <Route path="/patient/profile" element={<PatientProfilePage />} />
+            <Route path="/appoinment/list" element={<AppoinmentListingPage/>} />
+            
+            {/*doctor*/}
             <Route path="/discharge" element={<Dischargesummary />} />
+            <Route path="/dischargedisp" element={<Dischargesummarydisp />} />
             <Route path="/addmedhis" element={<Addmedicalhistory />} /> 
             <Route path="/blockpat" element={<Blockpatient />} />
-            <Route path="/dischargedisp" element={<Dischargesummarydisp />} />
             <Route path="/blockpatdisp" element={<Blockpatientdisp />} />
             <Route path="/labtestentry" element={<Labtestentry />} />
-            <Route path="/progressupdate" element={<Progressupdate />} />
-            <Route path="/doctor/list" element={<DoctorProfileListingPage />} />
-            <Route path="/appoinment/list" element={<AppoinmentListingPage/>} />
-            <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
-            <Route path="/patient/profile" element={<PatientProfilePage />} />
-            {/* 29-09-2023 edit by loga */}
+            <Route path="/progressupdate" element={<Progressupdate />} />            
             <Route path="/doctor/appoinment" element={<Doctorappoinmentlist/>}/>
+            {/* Change */}
             <Route path="/docpat/auth" element={<Doctorpatientauth/>}/>
-            <Route path="/test" element={<PatientDocdetails/>}/>
+
+
+            
+            {/* <Route path="/test" element={<PatientDocdetails/>}/> */}
             <Route path="*" element={<PageNotFound />} />
+            {/* COMMON */}
+            <Route path="/appoinment/:aid" element={<AppoinmentDetailPage />} />
         </Routes>
     </BrowserRouter>
 );
