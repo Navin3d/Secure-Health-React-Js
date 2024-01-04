@@ -30,11 +30,18 @@
     background: linear-gradient(to bottom, #4cd900, #2fb96d);
     color: white;
     padding: 7px;
+    margin-top: 20px;
     border: 1px solid black;
     border-radius: 5px;
     font-weight: bolder;
     font-size: 20px;
     font-family: 'Kanit', sans-serif;
+}
+#css{
+    margin-left: 30px;
+}
+#html{
+    margin-left: 30px;
 }
 
 .addmed-head{
@@ -80,11 +87,19 @@
 
 .dsbg{
     background-image: url('../../assets/images/background.jpg');
-    height: 100vh;
+    height: 110vh;
 }
 .ds-form{
  margin-top: 60px;
- height: 700px;
+ height: 600px;
+ width: 600px;
+ border: 1px solid rgb(88, 172, 98);
+ background-color: white;
+ border-radius: 10px;
+}
+.ds-form-discharge{
+ margin-top: 60px;
+ height: 650px;
  width: 600px;
  border: 1px solid rgb(88, 172, 98);
  background-color: white;

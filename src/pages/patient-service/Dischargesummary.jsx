@@ -11,9 +11,9 @@ const Dischargesummary = () => {
 
                 </div>
                 <div className="col-md-6">
-                    <div className="ds-form">
+                    <div className="ds-form-discharge">
                         <div className="row">
-                       
+        
                             <div className="col">
                                 <h5 className='sub-head1'>Discharge Summary</h5>
                             </div>
@@ -50,7 +50,6 @@ const Dischargesummary = () => {
                         </div>
 
                         <div className="row">
-                        <div className="addmed-top1"></div>
                             <div className="col"></div>
                             <div className="col"></div>
                             <div className="col"></div>
@@ -59,7 +58,6 @@ const Dischargesummary = () => {
                             </div>
                             <div className="col"></div>
                             <div className="col"></div>
-                    
                             <div className="col"></div>
                         </div>
 

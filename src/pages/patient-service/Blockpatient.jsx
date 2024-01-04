@@ -2,6 +2,8 @@ import React from 'react'
 import '../../styles/pages/Addmedicalhistory.css'
 
 const Blockpatient = () => {
+
+    
     return (
         <div>
             <div className="dsbg">
@@ -69,7 +71,7 @@ const Blockpatient = () => {
 
 
                                 <div className="row">
-                                    <div className="addmed-top1"></div>
+                    
                                     <div className="col"></div>
                                     <div className="col"></div>
                                     <div className="col"></div>
@@ -78,7 +80,6 @@ const Blockpatient = () => {
                                     </div>
                                     <div className="col"></div>
                                     <div className="col"></div>
-
                                     <div className="col"></div>
                                 </div>
 
