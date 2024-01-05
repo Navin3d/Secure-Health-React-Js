@@ -1,16 +1,30 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../../styles/pages/Patientprofile.css'
 import pat_profle from '../../assets/images/profile.jpg'
 const INITIAL_PATIENT = {
-    name: "kaushik",
-    dob: "2992-11-31" 
+    name: "LOGA",
+    dob: "2992-11-31" ,
+    patprblm : "Allergy",
+    weight : "168",
+    Bloodtype: "o+ve",
+    age: "27",
+    height: "173cm",
+    hashiv : "NO",
+    address : " 123, Boardway, Newyork ,600122",
+    phnno: "9790778113",
+    hphnno: "9789877999",
+    wphnno : "283509424",
+    email : "smlogasubramani"
 };
-const PatientProfile = () => {
-    const [patientData, setPatient] = useState(INITIAL_PATIENT);
 
-    useEffect(() => {
-        setPatient((prev) => ({...prev, "name": "monish"}));
-    }, []);
+const MEDICATION = ["clapal" , " citrize" , 'boyad' , 'electrol', 'sinerst' ,'amx500'];
+const MED_DAYS = ["30" , "20", "2" ,"14" , "3" ,"4"];
+
+const PatientProfile = () => {
+    const [patientData] = useState(INITIAL_PATIENT);
+    const[med] = useState(MEDICATION);
+    const[duration ] = useState(MED_DAYS);
+
     return (
         <div>
             {/* starting at 9:30 on 11-02-2023 */}
@@ -26,37 +40,37 @@ const PatientProfile = () => {
                                 <div className="col" id='pat_per_details'>
                                     <img className='Pat_img' src={pat_profle} alt="loga" />
                                     <h4 className='patient_prof_name'>{ patientData.name }</h4>
-                                    <p className='patient_prof_prblm'>Allergy</p>
+                                    <p className='patient_prof_prblm'>{patientData.patprblm}</p>
                                     <div className="row">
                                         <div className="col">
                                             <h6 className='det'>DOB</h6>
                                             <p id='det_ans'>{ patientData.dob }</p>
                                             <h6 className='det'>Weight</h6>
-                                            <p id='det_ans'>168 lb</p>
+                                            <p id='det_ans'>{patientData.weight}} lb</p>
                                             <h6 className='det'>Blood group</h6>
-                                            <p id='det_ans'>O+ve</p>
+                                            <p id='det_ans'>{patientData.Bloodtype}</p>
                                         </div>
                                         <div className="col">
                                             <h6 className='det'>Age</h6>
-                                            <p id='det_ans'> 22yr 12mon</p>
+                                            <p id='det_ans'> {patientData.age}</p>
                                             <h6 className='det'>Height</h6>
-                                            <p id='det_ans'>173cm</p>    
+                                            <p id='det_ans'>{patientData.height}</p>    
                                             <h6 className='det'>HIV</h6>
-                                            <p id='det_ans'>negative</p>                                        
+                                            <p id='det_ans'>{patientData.hashiv}</p>                                        
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col">
                                 <h6 className='det1'>HomeAddress</h6>
-                                <p id='det_ans1'> 123, Boardway, Newyork ,600122</p>
+                                <p id='det_ans1'>{patientData.address}</p>
                                 <h6 className=' det1'>Mobile phone number-#</h6>
-                                <p id='det_ans1'>(+91) 7305459900</p>
+                                <p id='det_ans1'>(+91){patientData.phnno} </p>
                                 <h6 className=' det1'>Home phone-#</h6>
-                                <p id='det_ans1'> (+91) 9790778113</p>
+                                <p id='det_ans1'> (+91){patientData.hphnno} </p>
                                 <h6 className=' det1'>Work phone-#</h6>
-                                <p id='det_ans1'> (+91) 9790778113</p>
+                                <p id='det_ans1'> (+91) {patientData.wphnno}</p>
                                 <h6 className='det1'>Email-#</h6>
-                                <p id='det_ans1'> Smlogasubramani@gmail.com</p>                                    
+                                <p id='det_ans1'> {patientData.email}@gmail.com</p>                                    
                                 </div>
                             </div>
                             <div className="buttttttton">
@@ -65,25 +79,20 @@ const PatientProfile = () => {
                         </div>
                         <div className="col">
                             <div  id="Pat_pers_background1"  className="row">
+                                
                                 <div className="col">
                                     <h5 id='curr_med'>
                                          Medication
                                     </h5>
                                     <hr />
-                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  clapal</p>
-                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  citrize</p>
-                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  Boreyad</p>
-                                    <p className='med'><i  class="fa-solid fa-capsules"></i>  electrol</p>
-                                </div>
+                                    {med.map((i,index)=>( <p className='med' key={index}><i  class="fa-solid fa-capsules"></i>{i}</p>))} 
+                                </div>  
                                 <div className="col">
                                     <h5 id='curr_med' >
                                         Duration
                                     </h5>
                                     <hr />
-                                    <p className='med'>6 months</p>
-                                    <p className='med'>3 days</p>
-                                    <p className='med'>9 days</p>
-                                    <p className='med'>4 weeks</p>
+                                    {duration.map((j,index)=>(<p key={index}className='med'>{j} days </p>))}
                                 </div>
                             </div>
                             <div className="up"></div>
@@ -148,8 +157,6 @@ const PatientProfile = () => {
                             <p className='med1'>John adam</p>
                             </div>
                             </div>
-
-                            
                         </div>
                     </div>
                     <div className="down"></div>
