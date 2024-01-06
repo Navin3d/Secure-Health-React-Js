@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../../styles/pages/Patientprofile.css'
 import pat_profle from '../../assets/images/profile.jpg'
+
 const INITIAL_PATIENT = {
     name: "LOGA",
     dob: "2992-11-31" ,
@@ -17,13 +18,28 @@ const INITIAL_PATIENT = {
     email : "smlogasubramani"
 };
 
+const PAT_DETAIL = {
+    date : "06-02-23",
+    script: "We've all heard the horror stories about hospital risks after surgery. There's the danger of medical complications, like bleeding or infection. Then there are the human errors, like getting the wrong drug or dosage. Even though you've got a lot of well-trained people in a hospital working very hard, they're still people,says Fran Griffin, RRT, MPA, a director at the Institute for Healthcare Improvement in Cambridge, Mass. And people sometimes make mistakes."
+}
+
+const REPORT = [
+    {xray : "x-ray" , date:"06/06/23" , name:"johnadam"},
+    {xray : "x-ray" , date:"06/07/23" , name:"Logasubramani"},
+    {xray : "x-ray" , date:"06/08/23" , name:"priya"},
+    {xray : "x-ray" , date:"06/09/23" , name:"navin"},
+    ];
+
 const MEDICATION = ["clapal" , " citrize" , 'boyad' , 'electrol', 'sinerst' ,'amx500'];
 const MED_DAYS = ["30" , "20", "2" ,"14" , "3" ,"4"];
+
 
 const PatientProfile = () => {
     const [patientData] = useState(INITIAL_PATIENT);
     const[med] = useState(MEDICATION);
     const[duration ] = useState(MED_DAYS);
+    const[notes] = useState(PAT_DETAIL);
+    const[reportresult] = useState(REPORT);
 
     return (
         <div>
@@ -32,8 +48,7 @@ const PatientProfile = () => {
                     <div className="row">
                         <h4 className='Pat_prof_title'>PATIENT OVERVIEW </h4>
                     </div>
-                    <div className="row">
-                        
+                    <div className="row">  
                         <div id="Pat_pers_background" className="col">
                             {/* left side box */}
                             <div className="row">
@@ -44,9 +59,9 @@ const PatientProfile = () => {
                                     <div className="row">
                                         <div className="col">
                                             <h6 className='det'>DOB</h6>
-                                            <p id='det_ans'>{ patientData.dob }</p>
+                                            <p id='det_ans'>{patientData.dob }</p>
                                             <h6 className='det'>Weight</h6>
-                                            <p id='det_ans'>{patientData.weight}} lb</p>
+                                            <p id='det_ans'>{patientData.weight}lb</p>
                                             <h6 className='det'>Blood group</h6>
                                             <p id='det_ans'>{patientData.Bloodtype}</p>
                                         </div>
@@ -127,36 +142,26 @@ const PatientProfile = () => {
                                  Notes
                             </h5>
                             <hr />
-                            <p className='med'>06/06/2023</p>
-                            <p className='med1'> We've all heard the horror stories about hospital risks after surgery. There's the danger of medical complications, like bleeding or infection. Then there are the human errors, like getting the wrong drug or dosage. "Even though you've got a lot of well-trained people in a hospital working very hard, they're still people," says Fran Griffin, RRT, MPA, a director at the Institute for Healthcare Improvement in Cambridge, Mass. "And people sometimes make mistakes."</p>
+                        <p className='med'>{notes.date}</p>
+                        <p className='med1'>{notes.script}</p>    
                         </div>
                         <div id="Pat_pers_background1" className="col">
                             <h5 id='curr_med'>
                                  Lab results
                             </h5>
                             <hr />
-                            <div className="row">
-                            <div className="col">
-                            <p className='med1'><i id='note' class="fa-solid fa-note-sticky"></i> x_ray </p>
+                            {reportresult.map((r,index)=>(
+                            <div key={index} className="row">
+                            <div  className="col">
+                            <p className='med1'><i id='note' class="fa-solid fa-note-sticky"></i> {r.xray} </p>
                             </div>
                             <div className="col">
-                            <p className='med1'>06/06/2023</p>
+                            <p className='med1'>{r.date}</p>
                             </div>
                             <div className="col">
-                            <p className='med1'>John adam</p>
+                            <p className='med1'>{r.name}</p>
                             </div>
-                            </div>
-                            <div className="row">
-                            <div className="col">
-                            <p className='med1'><i id='note' class="fa-solid fa-note-sticky"></i> x_ray </p>
-                            </div>
-                            <div className="col">
-                            <p className='med1'>06/06/2023</p>
-                            </div>
-                            <div className="col">
-                            <p className='med1'>John adam</p>
-                            </div>
-                            </div>
+                            </div>))}
                         </div>
                     </div>
                     <div className="down"></div>
