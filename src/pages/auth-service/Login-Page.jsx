@@ -1,16 +1,23 @@
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import LoginForm from "../../components/forms/Login.form.component";
 
 import LoginImg from "../../assets/images/Login.png";
 import "../../styles/pages/Login.page.css";
+import { useEffect } from "react";
+import { isLoggedIn } from "../../services/auth.service";
 
 
 const LoginPage = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        isLoggedIn() && navigate("/");
+    });
     return (
         <div className="login-page">
             <Container>
-
                 <Row>
                     <Col>
                         {/* <Container> */}
