@@ -15,13 +15,13 @@ const INITIAL_PATIENT = {
     phnno: "9790778113",
     hphnno: "9789877999",
     wphnno : "283509424",
-    email : "smlogasubramani"
+    email : "smlogasubramani",
+    patreviewdetails : {
+        date : "06-02-23",
+        script: "We've all heard the horror stories about hospital risks after surgery. There's the danger of medical complications, like bleeding or infection. Then there are the human errors, like getting the wrong drug or dosage. Even though you've got a lot of well-trained people in a hospital working very hard, they're still people,says Fran Griffin, RRT, MPA, a director at the Institute for Healthcare Improvement in Cambridge, Mass. And people sometimes make mistakes.",
+    }
 };
 
-const PAT_DETAIL = {
-    date : "06-02-23",
-    script: "We've all heard the horror stories about hospital risks after surgery. There's the danger of medical complications, like bleeding or infection. Then there are the human errors, like getting the wrong drug or dosage. Even though you've got a lot of well-trained people in a hospital working very hard, they're still people,says Fran Griffin, RRT, MPA, a director at the Institute for Healthcare Improvement in Cambridge, Mass. And people sometimes make mistakes."
-}
 
 const REPORT = [
     {xray : "x-ray" , date:"06/06/23" , name:"johnadam"},
@@ -38,7 +38,6 @@ const PatientProfile = () => {
     const [patientData] = useState(INITIAL_PATIENT);
     const[med] = useState(MEDICATION);
     const[duration ] = useState(MED_DAYS);
-    const[notes] = useState(PAT_DETAIL);
     const[reportresult] = useState(REPORT);
 
     return (
@@ -142,8 +141,8 @@ const PatientProfile = () => {
                                  Notes
                             </h5>
                             <hr />
-                        <p className='med'>{notes.date}</p>
-                        <p className='med1'>{notes.script}</p>    
+                        <p className='med'>{patientData.patreviewdetails.date}</p>
+                        <p className='med1'>{patientData.patreviewdetails.script}</p>    
                         </div>
                         <div id="Pat_pers_background1" className="col">
                             <h5 id='curr_med'>
